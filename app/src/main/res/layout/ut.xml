@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp"
+    android:backgroundTint="#B2EBF2"
+    android:layout_marginBottom="20dp"
+    android:scrollbars="vertical"
+    app:cardCornerRadius="20dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/wt_Initial_Tv"
+           app:layout_constraintLeft_toLeftOf="parent"
+           android:layout_marginTop="5dp"
+           android:layout_marginLeft="12dp"
+            android:textSize="20sp"
+           app:layout_constraintTop_toTopOf="parent"
+           android:text="Initial Load :-"
+            android:textColor="@color/black"
+
+           >
+
+       </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/initial_Tv"
+            app:layout_constraintStart_toEndOf="@+id/wt_Initial_Tv"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:textSize="20sp"
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="2 Tons"
+            android:textColor="@color/black"
+
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/load_FinalTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="43 Ton"
+            android:textSize="20sp"
+
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/initial_Tv"
+            app:layout_constraintStart_toEndOf="@+id/Tv_Fload"
+
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/Tv_Fload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Final Load :-"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/wt_Initial_Tv"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/Tv_Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Load Status:-"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/Tv_Fload">
+
+        </TextView>
+        <TextView
+            android:id="@+id/load_StatusTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Normal"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/load_FinalTv"
+            app:layout_constraintStart_toEndOf="@+id/Tv_Status"
+
+            >
+
+        </TextView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
